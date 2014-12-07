@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Buzz Transport 2</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_spinner">Jumlah Penumpang</string>
+    <string name="title_spinner2">Jumlah Penumpang</string>
+
+    <string-array name="jmlh_penumpang">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="jmlh_penumpangkecil">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    
+    <string-array name="timerjam">
+        <item>00.00 WIB</item>
+        <item>01.00 WIB</item>
+        <item>02.00 WIB</item>
+        <item>03.00 WIB</item>
+        <item>04.00 WIB</item>
+        <item>05.00 WIB</item>
+        <item>06.00 WIB</item>
+        <item>07.00 WIB</item>
+        <item>08.00 WIB</item>
+        <item>09.00 WIB</item>
+        <item>10.00 WIB</item>
+        <item>11.00 WIB</item>
+        <item>12.00 WIB</item>
+        <item>13.00 WIB</item>
+        <item>14.00 WIB</item>
+        <item>15.00 WIB</item>
+        <item>16.00 WIB</item>
+        <item>17.00 WIB</item>
+        <item>18.00 WIB</item>
+        <item>19.00 WIB</item>
+        <item>20.00 WIB</item>
+        <item>21.00 WIB</item>
+        <item>22.00 WIB</item>
+        <item>23.00 WIB</item>
+        <item>24.00 WIB</item>
+    </string-array>
+
+    <string name="from_date">From Date</string>
+    <string name="to_date">To Date</string>
+
+</resources>

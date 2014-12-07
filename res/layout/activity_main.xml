@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:mm="http://millennialmedia.com/android/schema"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <LinearLayout
+       
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="5dp" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:text="Transportasi Bis Antar Kota"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp" >
+
+            <RadioButton
+                android:id="@+id/rbreturn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pulang Pergi"
+                android:onClick="onRadioButtonClicked" />
+
+            <RadioButton
+                android:id="@+id/rbway"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sekali Jalan"
+                android:onClick="onRadioButtonClicked" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:text="Transport Dari"
+            android:textSize="15dp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/depart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:text="Transport Tujuan"
+            android:textSize="15dp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="50dp"
+            android:text="Waktu dan Tanggal Pergi"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/departD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="7"
+                android:hint="@string/from_date"
+                android:inputType="datetime|textAutoComplete|textAutoCorrect" />
+
+            <Spinner
+                android:id="@+id/departT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="7"
+                android:entries="@array/timerjam"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvReturn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:text="Waktu dan Tanggal Pulang"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:id="@+id/layoutreturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/returnD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="7"
+                android:hint="@string/to_date"
+                android:inputType="datetime|textAutoComplete|textAutoCorrect" />
+
+            <Spinner
+                android:id="@+id/returnT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="7"
+                android:entries="@array/timerjam"/> />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:text="Jumlah Penumpang (lebih dari 10 tahun)"
+            android:textSize="15dp" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/jmlh_penumpang"
+            android:prompt="@string/title_spinner" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:text="Jumlah Penumpang (kurang dari 10 tahun)"
+            android:textSize="15dp" />
+
+       <Spinner 
+           android:id="@+id/spinner2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/jmlh_penumpangkecil"
+            android:prompt="@string/title_spinner" />
+          
+
+
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lanjut" 
+            android:layout_gravity="right"/>
+    </LinearLayout>
+
+</ScrollView>
